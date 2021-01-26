@@ -1,0 +1,4 @@
+node_modules
+
+# Credentials Storage
+.DS_Store
