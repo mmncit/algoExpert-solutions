@@ -1,9 +1,14 @@
 import { twoNumberSum } from "../solutions/twoNumSum/twoNumSum";
+import { twoNumberSumBinarySearch } from "../solutions/twoNumSum/twoNumSumBinarySearch";
 
 describe("twoNumberSum()", () => {
-  test("Test Case #1", () => {
-    const resultArr: number[] = twoNumberSum([3, 5, -4, 8, 11, 1, -1, 6], 10);
-    expect(resultArr.length).toBe(2);
-    expect(resultArr).toEqual([11, -1]);
-  });
+  test.each([twoNumberSum, twoNumberSumBinarySearch])(
+    "Test Case #1 for %s",
+    (func) => {
+      const resultArr: number[] = func([3, 5, -4, 8, 11, 1, -1, 6], 10);
+      expect(resultArr.length).toBe(2);
+      expect(resultArr.includes(11)).toBe(true);
+      expect(resultArr.includes(-1)).toBe(true);
+    }
+  );
 });
