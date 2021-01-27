@@ -5,6 +5,7 @@
   "keywords": [
     "algoExpert solutions"
   ],
+  "private": true,
   "devDependencies": {
     "@types/ramda": "^0.26.18",
     "@types/jest": "^26.0.15",
