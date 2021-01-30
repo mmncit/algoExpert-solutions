@@ -1,5 +1,5 @@
-import { twoNumberSum } from "../solutions/twoNumSum/twoNumSum";
-import { twoNumberSumBinarySearch } from "../solutions/twoNumSum/twoNumSumBinarySearch";
+import { twoNumberSum } from "../solutions/easy/twoNumSum/twoNumSum";
+import { twoNumberSumBinarySearch } from "../solutions/easy/twoNumSum/twoNumSumBinarySearch";
 
 describe("twoNumberSum()", () => {
   test.each([twoNumberSum, twoNumberSumBinarySearch])(

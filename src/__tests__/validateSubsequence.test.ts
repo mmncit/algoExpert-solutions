@@ -1,4 +1,4 @@
-import { isValidSubsequence } from "../solutions/validateSubseq/validateSubsequence";
+import { isValidSubsequence } from "../solutions/easy/validateSubseq/validateSubsequence";
 
 describe.each([isValidSubsequence])(
   "test isValidSubsequence for %s",
