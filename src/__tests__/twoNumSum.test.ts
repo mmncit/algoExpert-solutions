@@ -3,7 +3,7 @@ import { twoNumberSumBinarySearch } from "../solutions/twoNumSum/twoNumSumBinary
 
 describe("twoNumberSum()", () => {
   test.each([twoNumberSum, twoNumberSumBinarySearch])(
-    "Test Case #1 for %s",
+    "positive test for %s",
     (func) => {
       const resultArr: number[] = func([3, 5, -4, 8, 11, 1, -1, 6], 10);
       expect(resultArr.length).toBe(2);
